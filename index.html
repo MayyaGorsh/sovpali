@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Совпали — знакомства через мероприятия</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="navbar__logo">
+      <svg viewBox="0 0 36 36" fill="none"><circle cx="12" cy="18" r="10" fill="#FF6B35" opacity=".8"/><circle cx="24" cy="18" r="10" fill="#E8505B" opacity=".8"/></svg>
+      Совпали
+    </a>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    <div class="navbar__links">
+      <a href="#how">Как это работает</a>
+      <a href="#features">Возможности</a>
+      <a href="#pricing">Цены</a>
+      <a href="#faq">FAQ</a>
+      <a href="partners.html">Для организаторов</a>
+      <a href="#pricing" class="btn--nav">Попробовать</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge">&#127881; Новый способ знакомиться</div>
+      <h1>Знакомься с людьми через <span>мероприятия</span></h1>
+      <p class="hero__subtitle">Никаких бесконечных свайпов. Найди человека с общими интересами и встретьтесь на мероприятии, которое нравится обоим.</p>
+      <div class="hero__cta">
+        <a href="#pricing" class="btn btn--primary">Начать бесплатно</a>
+        <a href="#how" class="btn btn--outline">Как это работает</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <strong>500+</strong>
+          <span>мероприятий</span>
+        </div>
+        <div class="hero__stat">
+          <strong>87%</strong>
+          <span>доходят до встречи</span>
+        </div>
+        <div class="hero__stat">
+          <strong>4.8</strong>
+          <span>рейтинг</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="phone-mockup">
+        <div class="phone-mockup__screen">
+          <div class="phone-mockup__header">
+            <span>Мероприятия</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF6B35" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <div class="phone-mockup__cards">
+            <div class="mock-card">
+              <div class="mock-card__avatar mock-card__avatar--1"></div>
+              <div class="mock-card__info">
+                <div class="mock-card__name">Аня, 24</div>
+                <div class="mock-card__event">Выставка в ГМИИ</div>
+              </div>
+              <div class="mock-card__tag">Совпадение 92%</div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card__avatar mock-card__avatar--2"></div>
+              <div class="mock-card__info">
+                <div class="mock-card__name">Максим, 27</div>
+                <div class="mock-card__event">Концерт в Мутаборе</div>
+              </div>
+              <div class="mock-card__tag">Совпадение 88%</div>
+            </div>
+            <div class="mock-card">
+              <div class="mock-card__avatar mock-card__avatar--3"></div>
+              <div class="mock-card__info">
+                <div class="mock-card__name">Дарья, 22</div>
+                <div class="mock-card__event">Воркшоп по керамике</div>
+              </div>
+              <div class="mock-card__tag">Совпадение 95%</div>
+            </div>
+            <div class="mock-card" style="opacity:.5">
+              <div class="mock-card__avatar" style="background:#D4C5F9"></div>
+              <div class="mock-card__info">
+                <div class="mock-card__name">Артём, 26</div>
+                <div class="mock-card__event">Фестиваль стрит-фуда</div>
+              </div>
+              <div class="mock-card__tag">Совпадение 84%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card float-card--1">
+          <div class="float-card__icon">&#10084;&#65039;</div>
+          <div class="float-card__text">Новый мэтч!</div>
+          <div class="float-card__sub">У вас 3 общих интереса</div>
+        </div>
+        <div class="float-card float-card--2">
+          <div class="float-card__icon">&#127915;</div>
+          <div class="float-card__text">Сегодня вечером</div>
+          <div class="float-card__sub">Кино-квиз в «Циферблате»</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how-it-works" id="how">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">4 простых шага</span>
+      <h2>Как работает Совпали</h2>
+      <p>От регистрации до реальной встречи — проще, чем заказать кофе</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step__number">1</div>
+        <h3 class="step__title">Расскажи о себе</h3>
+        <p>Укажи интересы, цели знакомства и любимые форматы досуга. AI подберёт самых подходящих людей.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step__number">2</div>
+        <h3 class="step__title">Получи подборку</h3>
+        <p>Мы подберём мероприятия, которые тебе понравятся, и покажем, кто ещё хочет туда пойти.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step__number">3</div>
+        <h3 class="step__title">Найди мэтч</h3>
+        <p>Система подберёт людей с похожими интересами. Лайкните друг друга — и пойдёте на мероприятие вместе.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step__number">4</div>
+        <h3 class="step__title">Встретьтесь вживую</h3>
+        <p>Никаких долгих переписок — общий контекст мероприятия делает первую встречу естественной и комфортной.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Возможности</span>
+      <h2>Почему Совпали — это другой подход</h2>
+      <p>Мы создали сервис, где знакомство происходит в контексте общих интересов и реальной жизни</p>
+    </div>
+    <div class="features__grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon">&#129302;</div>
+        <h3 class="feature-card__title">AI-мэтчинг</h3>
+        <p>Подбор не только по анкете, но и по интересам, стилю жизни, формату досуга и цели знакомства. Не поверхностные свайпы, а глубокая совместимость.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon">&#127915;</div>
+        <h3 class="feature-card__title">Умная афиша</h3>
+        <p>Персонализированная подборка мероприятий в твоём городе. Выставки, концерты, воркшопы, квизы — всё, что подходит именно тебе.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card__icon">&#128274;</div>
+        <h3 class="feature-card__title">Безопасный контекст</h3>
+        <p>Знакомство происходит в общественном месте с понятным сценарием. Никакой неловкости — вы оба пришли на мероприятие, которое вам нравится.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-card__icon">&#127919;</div>
+        <h3 class="feature-card__title">Три формата</h3>
+        <p>Ищешь романтику, дружбу или нетворкинг? Укажи цель, и система подберёт людей с тем же намерением.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-card__icon">&#128200;</div>
+        <h3 class="feature-card__title">Высокая конверсия во встречу</h3>
+        <p>Мероприятие — это уже готовый план. Не нужно неделями переписываться и придумывать, куда пойти.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-card__icon">&#127775;</div>
+        <h3 class="feature-card__title">Удобная покупка билетов</h3>
+        <p>Нашли мэтч — можно сразу купить билеты на двоих в пару кликов. Никаких долгих согласований, кто и где покупает.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Тарифы</span>
+      <h2>Дешевле чашки кофе в месяц</h2>
+      <p>Начни бесплатно, а когда поймёшь, что это работает — переходи на полную версию</p>
+    </div>
+
+    <div class="pricing__grid reveal">
+      <!-- FREE -->
+      <div class="pricing-card">
+        <div class="pricing-card__name">Бесплатный</div>
+        <div class="pricing-card__desc">Попробуй и убедись</div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount pricing-card__amount--free">0 &#8381;</span>
+          <span class="pricing-card__period">навсегда</span>
+        </div>
+        <ul class="pricing-card__features">
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Регистрация и заполнение профиля
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            5 мероприятий в неделю
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Базовые фильтры подбора
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Мэтчинг с другими пользователями
+          </li>
+          <li class="disabled">
+            <svg class="cross" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/></svg>
+            Кто тебя лайкнул — скрыто
+          </li>
+          <li class="disabled">
+            <svg class="cross" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"/></svg>
+            Приоритетный показ в ленте
+          </li>
+        </ul>
+        <a href="#" class="btn btn--outline" style="justify-content:center">Начать бесплатно</a>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="pricing-card pricing-card--popular">
+        <div class="pricing-card__badge">&#128293; Популярный выбор</div>
+        <div class="pricing-card__name">Совпали+</div>
+        <div class="pricing-card__desc">Полный доступ ко всем возможностям</div>
+        <div class="pricing-card__price">
+          <span class="pricing-card__amount">349 &#8381;</span>
+          <span class="pricing-card__period">/ месяц</span>
+        </div>
+        <ul class="pricing-card__features">
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <strong>Все мероприятия</strong> без ограничений
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <strong>Полный набор фильтров</strong> подбора
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Смотри, <strong>кто тебя лайкнул</strong>
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            <strong>Приоритетный показ</strong> в мэтчинге
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            AI-рекомендации мероприятий
+          </li>
+          <li>
+            <svg class="check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/></svg>
+            Поддержка и ранний доступ к новинкам
+          </li>
+        </ul>
+        <a href="#" class="btn btn--primary" style="justify-content:center">Оформить подписку</a>
+        <div class="pricing-card__note">Отмена в любой момент. Без скрытых платежей.</div>
+      </div>
+    </div>
+
+    <!-- Nudge -->
+    <div class="pricing__nudge reveal">
+      <p>&#9889; <strong>349 &#8381; в месяц</strong> — это дешевле одного латте. При этом конверсия в реальную встречу в <strong>3 раза выше</strong>, чем у обычных дейтинг-приложений.</p>
+      <p style="margin-top:12px;font-size:.9rem;">Один поход на мероприятие обычно стоит 500–1500 &#8381;. С подпиской Совпали+ вы получаете неограниченный доступ за цену одного билета.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Отзывы</span>
+      <h2>Истории наших пользователей</h2>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">«Переехала в Москву полгода назад и вообще никого не знала. Через Совпали нашла подругу на выставке в Третьяковке — мы теперь ходим куда-то каждые выходные!»</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:var(--coral)"></div>
+          <div>
+            <div class="testimonial-card__name">Катя, 23</div>
+            <div class="testimonial-card__info">Москва, студентка</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">«Устал от дейтинг-приложений — одни переписки без результата. В Совпали первый же мэтч закончился настоящим свиданием на концерте. Теперь мы вместе уже 4 месяца.»</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:var(--secondary)"></div>
+          <div>
+            <div class="testimonial-card__name">Дмитрий, 28</div>
+            <div class="testimonial-card__info">Санкт-Петербург, разработчик</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal-delay-3">
+        <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-card__text">«Самое крутое — что не нужно придумывать, куда идти и о чём говорить. Мероприятие само создаёт контекст. За месяц нашла двух подруг и отличную компанию.»</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar" style="background:#B8D4E3"></div>
+          <div>
+            <div class="testimonial-card__name">Алина, 25</div>
+            <div class="testimonial-card__info">Казань, маркетолог</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">FAQ</span>
+      <h2>Частые вопросы</h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          Чем Совпали отличается от обычных дейтинг-приложений?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">В обычных дейтинг-приложениях знакомство начинается со свайпа и часто заканчивается на переписке. В Совпали знакомство сразу встроено в офлайн-контекст — вы подбираете мероприятие, мэтчитесь с человеком, который тоже хочет туда пойти, и встречаетесь в реальной жизни. Никаких бесконечных переписок.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          Это только для романтических знакомств?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">Нет! Совпали поддерживает три формата знакомств: романтические, дружеские и нетворкинг. При регистрации вы указываете, что ищете, и система подбирает людей с таким же намерением.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          Безопасно ли это?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">Безопасность — наш приоритет. Встречи происходят только на публичных мероприятиях. Все профили проходят модерацию. Вы заранее видите информацию о человеке и решаете, хотите ли встретиться. У вас всегда есть контроль.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          Могу ли я отменить подписку в любой момент?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">Да, подписка отменяется в один клик. Никаких скрытых платежей, штрафов или обязательств. Доступ сохраняется до конца оплаченного периода.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          В каких городах работает Совпали?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">На старте мы работаем в Москве и Санкт-Петербурге. Мы агрегируем мероприятия с крупных афиш и постоянно расширяем географию. Если вашего города ещё нет — оставьте заявку, и мы уведомим о запуске.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__question">
+          Почему 349 &#8381;? Не дорого ли это?
+          <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>
+        </button>
+        <div class="faq-item__answer"><div class="faq-item__answer-inner">349 &#8381; в месяц — это стоимость одного латте. При этом вы получаете неограниченный доступ ко всем мероприятиям и расширенные функции мэтчинга. Для сравнения: один поход на мероприятие обычно стоит 500–1500 &#8381;.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Готов найти своих людей?</h2>
+    <p>Присоединяйся к Совпали и начни знакомиться через мероприятия, которые тебе нравятся</p>
+    <a href="#pricing" class="btn btn--white">Начать бесплатно</a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <svg width="28" height="28" viewBox="0 0 36 36" fill="none"><circle cx="12" cy="18" r="10" fill="#FF6B35" opacity=".8"/><circle cx="24" cy="18" r="10" fill="#E8505B" opacity=".8"/></svg>
+          Совпали
+        </div>
+        <p class="footer__desc">Сервис знакомств через мероприятия. Находи людей по интересам и встречайся в реальной жизни.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Продукт</h4>
+        <a href="#how">Как это работает</a>
+        <a href="#features">Возможности</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer__col">
+        <h4>Компания</h4>
+        <a href="#">О нас</a>
+        <a href="#">Блог</a>
+        <a href="#">Контакты</a>
+        <a href="partners.html">Для организаторов</a>
+      </div>
+      <div class="footer__col">
+        <h4>Контакты</h4>
+        <a href="#">hello@sovpali.ru</a>
+        <a href="#">Telegram</a>
+        <a href="#">VK</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Совпали. Все права защищены.</span>
+      <span>Политика конфиденциальности</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
